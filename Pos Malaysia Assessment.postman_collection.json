@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "911ddf1c-400d-4bb4-8a5b-a6505955d590",
+		"name": "Pos Malaysia Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38535449"
+	},
+	"item": [
+		{
+			"name": "List All Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/countries",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get State by postcode",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"postCode\": \"01000\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/getStateByPostcode",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"getStateByPostcode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"Malaysia\",\r\n    \"postcodeFrom\": 41200,\r\n    \"postcodeTo\": 35600,\r\n    \"weight\":6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/price",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
