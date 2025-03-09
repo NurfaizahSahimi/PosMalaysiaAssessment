@@ -3,6 +3,8 @@
 This repository contains solutions for both **API Testing** and **UI Test Automation** tasks. Below are the details for each question in the assessment.
 
 ---
+## **Screenshots**
+I have provided screenshots of the test run results for both questions, and you can find them in the 'Screenshots' folder.
 
 ## **Question 1 – API Testing**
 
